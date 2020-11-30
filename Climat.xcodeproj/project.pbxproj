@@ -15,6 +15,7 @@
 		0078989725555BDA0042A239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0078989525555BDA0042A239 /* LaunchScreen.storyboard */; };
 		007898A225555BDB0042A239 /* ClimatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007898A125555BDB0042A239 /* ClimatTests.swift */; };
 		007898AD25555BDB0042A239 /* ClimatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007898AC25555BDB0042A239 /* ClimatUITests.swift */; };
+		00DE95A8257261CB00D039A6 /* WeatherFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DE95A7257261CB00D039A6 /* WeatherFetching.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		007898A825555BDB0042A239 /* ClimatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		007898AC25555BDB0042A239 /* ClimatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimatUITests.swift; sourceTree = "<group>"; };
 		007898AE25555BDB0042A239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00DE95A7257261CB00D039A6 /* WeatherFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFetching.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				0078989325555BDA0042A239 /* Assets.xcassets */,
 				0078989525555BDA0042A239 /* LaunchScreen.storyboard */,
 				0078989825555BDA0042A239 /* Info.plist */,
+				00DE95A7257261CB00D039A6 /* WeatherFetching.swift */,
 			);
 			path = Climat;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00DE95A8257261CB00D039A6 /* WeatherFetching.swift in Sources */,
 				0078988F25555BDA0042A239 /* ViewController.swift in Sources */,
 				0078988B25555BDA0042A239 /* AppDelegate.swift in Sources */,
 				0078988D25555BDA0042A239 /* SceneDelegate.swift in Sources */,
