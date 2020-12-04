@@ -42,6 +42,10 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherApiPa
     
     func didUpdateImageView(jsonModel: ConditionImage) {
         print(jsonModel.conditionImage)
+        DispatchQueue.main.async {
+            self.uiImageview.image = UIImage(systemName: jsonModel.conditionImage)
+        }
+        
     }
     
     func didSeeError(error: Error) {
