@@ -37,8 +37,6 @@ struct WeatherApiParsing {
                     if let safeData = data{
                         let parsedData = dataModeling(data: safeData)
                         self.delegate?.didUpdateImageView(jsonModel: parsedData!)
-                        
-                        
                     }
                 }
             }
@@ -52,7 +50,8 @@ struct WeatherApiParsing {
         do {
             let result = try decoderObject.decode(JsonModeling.self , from: data)
             let weatherId = result.weather[0].id
-            let conditionViewObj = ConditionImage(id: weatherId)
+            let tempereture = result.main.temp
+            let conditionViewObj = ConditionImage(id: weatherId, temperature: tempereture)
             return conditionViewObj
         } catch {
             self.delegate?.didSeeError(error: error)
